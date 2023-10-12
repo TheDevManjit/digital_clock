@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+    <div class="container">
+        <div class="date-container">
+            <p id="date">12'june'2023</p>
+            <p id="greeting">Goodmorning</p>
+            <p id="day">Wednesday</p>
+        </div>
+
+        <div class="time-container">
+            <div class="time">
+                <p id="hrs">18</p>
+            </div>
+            <div class="sep">
+                <p>:</p>
+            </div>
+            <div class="time">
+                <p id="min">50</p>
+            </div>
+            <div class="sep">
+                <p>:</p> 
+            </div>
+            <div class="time">
+                <p id="sec">60</p>
+            </div>
+            <div class="time">
+                <p id="am-pm" value="AM">AM</p>
+            </div>
+
+        </div>
+        <p class="alarm-h">SET ALARM</p>
+        <hr>
+        <div class="alarm">
+
+            <label for="al-hr">Hours</label>
+            <input type="number" name="al-hr" id="al-hr" class="al-item">
+            <label for="al-min">Minute</label>
+            <input type="number" name="al-min" id="al-min" class="al-item">
+
+            <select name="al-am-pm" id="al-am-pm" class="al-item">
+                <option value="AM">AM</option>
+                <option value="PM">PM</option>
+
+            </select>
+            <button id="btn" class="al-btn">SET</button>
+            <button id="stop" class="al-btn">stop</button>
+
+            <audio id="myAudio" src="alarm.mp3"></audio>
+           
+            
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
